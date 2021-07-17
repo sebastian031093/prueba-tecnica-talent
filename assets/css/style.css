@@ -10769,5 +10769,12 @@ h1 {
 .table tbody tr {
   color: #fff;
 }
+.table tbody tr a {
+  text-decoration: none;
+  color: #fff;
+}
+.table tbody tr a:hover {
+  color: #343a40;
+}
 
 /*# sourceMappingURL=style.css.map */

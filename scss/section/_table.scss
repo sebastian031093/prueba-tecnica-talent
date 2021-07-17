@@ -30,6 +30,14 @@ h1{
     tbody{
         tr{
             color: $white;
+            a{
+                text-decoration: none;
+                color: $white;
+            }
+
+            a:hover{
+                color: $gray-800;
+            }
         }
     }
 }

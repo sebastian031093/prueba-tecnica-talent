@@ -26,7 +26,7 @@ const tempalteJobs = (arrjobs) =>{
                         <td>${fila.title}</td>
                         <td>${fila.loation}</td>
                         <td>${fila.source__jobtype}</td>
-                        <td>${fila.url}</td>
+                        <td><a target="_blank" href="${fila.url}">${fila.url}</a></td>
                     </tr>
                 `;
             }).join('')}
