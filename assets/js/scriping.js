@@ -1,3 +1,4 @@
+import { tempalteJobs } from "./tempalte-jobs.js";
 
 const init = () => {
 
@@ -31,6 +32,8 @@ const init = () => {
     console.log(arrayInfo);
     console.table(arrayInfo);
 
+    tempalteJobs(arrayInfo)
+
   })
 
   //TODO:Aqui trate de emplear el codigo con fecht pero surgieron problemas de cors y otras cosas que no me permiteron implementarlo.
@@ -51,5 +54,5 @@ const init = () => {
 
 
 export {
-  init
+  init,
 }

@@ -1,7 +1,7 @@
-//Hola soy tu archivo de estilos.
+@use 'custom';
 
-$primary: tomato;
+//IMPORT THE COMPONENTS
+@use 'components/tipografy';
 
-.text1{
-    color: $primary;
-}
+//IMPORT SECTIONS
+@use 'section/table';

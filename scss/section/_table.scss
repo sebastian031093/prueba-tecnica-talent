@@ -1,0 +1,17 @@
+
+@use '../custom' as *;
+@use '../components/tipografy';
+
+
+.container{
+    //height: 90vh;
+    background: linear-gradient(to right, rgba($primary,0.95), rgba($secondary, 0.95));
+    border-radius: 20px;
+    height: 100%;
+    padding: 0;
+    position: relative;
+
+    h2{
+        text-align: center;
+    }
+}
