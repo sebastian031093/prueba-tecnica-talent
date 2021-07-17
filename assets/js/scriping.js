@@ -20,7 +20,7 @@ const init = () => {
     data.forEach(job => {
       const info = {
         url: job.href, //href
-        title: job.childNodes[1].children[0].outerText, //h4
+        title: job.childNodes[1].childNodes[1].textContent, //h4
         loation: job.childNodes[1].childNodes[3].childNodes[1].firstChild.data, //ul
         source__jobtype: job.childNodes[1].childNodes[3].childNodes[2].firstChild.data, //ul
       };
