@@ -10746,6 +10746,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background: #f8f9fa;
+}
+
+h1 {
+  color: #d63384;
+}
+
 .container {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(214, 51, 132, 0.95));
   border-radius: 20px;
@@ -10755,6 +10763,11 @@ textarea.form-control-lg {
 }
 .container h2 {
   text-align: center;
+  color: #fff;
+}
+
+.table tbody tr {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
