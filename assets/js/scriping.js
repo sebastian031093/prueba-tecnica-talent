@@ -1,19 +1,20 @@
 import { tempalteJobs } from "./tempalte-jobs.js";
-
+//https://cors-anywhere.herokuapp.com/
 const init = () => {
 
-  const request = new XMLHttpRequest();
-  request.open(
+  const req = new XMLHttpRequest();
+  req.open(
     "GET",
-    "https://cors-anywhere.herokuapp.com/https://zwangerpesiri.isolvedhire.com/jobs/"
+    "https://cors-anywhere.herokuapp.com/https://zwangerpesiri.isolvedhire.com/jobs/",
+    true
   );
 
-  request.responseType = 'document';
-  request.send();
-  console.log(request);
+  req.responseType = 'document';
+  req.send();
+  console.log(req);
   
-  request.addEventListener('load', function () {
-    const data = request.responseXML.querySelectorAll(".list-group-item.strip-side-borders");
+  req.addEventListener('load', function () {
+    const data = req.responseXML.querySelectorAll(".list-group-item.strip-side-borders");
     console.log(data)
 
     let arrayInfo = [];
@@ -37,16 +38,17 @@ const init = () => {
   })
 
   //TODO:Aqui trate de emplear el codigo con fecht pero surgieron problemas de cors y otras cosas que no me permiteron implementarlo.
-  // const URL = "https://cors-anywhere.herokuapp.com/https://zwangerpesiri.isolvedhire.com/jobs/";
+  // const URL =
+  //   "https://cors-anywhere.herokuapp.com/https://zwangerpesiri.isolvedhire.com/jobs/";
 
-  // const scrapingWebPage = async function (url) {
-  //   const response = await fetch(url);
-  //   // const data = await response;
-  //   console.log(response)
+  //   const scrapingWebPage = async function (url) {
+  //   const res = await fetch(url,{mode:'cors',});
+  //   const data = await res.text();
+  //   const doc = 
 
   // }
 
-  // scrapingWebPage(URL).then();
+  // scrapingWebPage(URL);
 
 }
 
